@@ -1,0 +1,14 @@
+[package]
+name = "tts_deepseek"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+hound = "3.5.0"
+rodio = "0.20.1"
+tts = "0.26.3"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+reqwest = { version = "0.12.12", features = ["blocking", "json"] }
+symphonia = { version = "0.5", features = ["mp3"] }
+tokio = { version = "1", features = ["full"] }
